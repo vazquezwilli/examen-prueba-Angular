@@ -1,0 +1,55 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <button (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+ 
+
+    
+    
+    <button routerLink="input" mat-button>Willians</button>
+    <!-- <button (click)="logOut()"  mat-button><mat-icon>store</mat-icon> Cerrar Sesion</button> -->
+    <span class="logout">
+        
+         <button  mat-mini-fab matTooltip="John Doe" [matMenuTriggerFor]="menu"  color="accent">
+          <mat-icon>perm_identity</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button (click)="logOut()" mat-menu-item>
+              <mat-icon>power_settings_new</mat-icon>
+              <span>Cerrar sesion</span>
+            </button>
+        </mat-menu>
+      </span>
+
+ 
+</mat-toolbar>
+<mat-drawer-container autosize>
+    <mat-drawer #drawer opened="true" mode="side" position="start">
+    <mat-nav-list>
+    
+        <mat-list-item>
+            <button routerLink="tienda" mat-button><mat-icon>store</mat-icon> Tiendas</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="articulo" mat-button><mat-icon>list alt</mat-icon> Articulos</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="cliente" mat-button><mat-icon>groups</mat-icon> Clientes</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="carritoCompra" mat-button><mat-icon>shopping_cart</mat-icon>Carrito de compras</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="table" mat-button><mat-icon>table</mat-icon> Table</button>
+        </mat-list-item>
+    
+    </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div style="text-align: center;min-height: 600px;">
+
+            <router-outlet></router-outlet>
+            </div>
+    </mat-drawer-content>
+</mat-drawer-container>

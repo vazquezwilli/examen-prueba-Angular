@@ -1,0 +1,23 @@
+<form [formGroup]="myform" (ngSubmit)="save()">
+    <h1 mat-dialog-title>{{inputdata.title}}</h1>
+    <div mat-dialog-content>
+     
+       <mat-form-field class="mr-1">
+        <mat-label>Codigo</mat-label>
+        <input matInput formControlName="codigo">
+       </mat-form-field>
+       <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <input matInput formControlName="descripcion">
+       </mat-form-field>
+       <mat-form-field>
+        <mat-label>Precio</mat-label>
+        <input matInput formControlName="precio">
+       </mat-form-field>
+     
+    </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button type="submit" color="primary">Save</button>
+      <a (click)="closeModal()" mat-raised-button color="warn">Close</a>
+    </div>
+    </form>

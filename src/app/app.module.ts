@@ -6,13 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputComponent } from './input/input.component';
 import { MaterialModule } from './material-module';
-import { AutocompleteComponent } from './component/autocomplete/autocomplete.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenubarComponent } from './component/menubar/menubar.component';
-import { TableComponent } from './component/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormdesignComponent } from './component/formdesign/formdesign.component';
-import { PopupComponent } from './component/popup/popup.component';
 import { TiendaComponent } from './component/tienda/tienda.component';
 import { ModalTiendaComponent } from './component/modal-tienda/modal-tienda.component';
 import { ArticuloComponent } from './component/articulo/articulo.component';
@@ -26,11 +22,7 @@ import { LoginComponent } from './component/login/login.component';
   declarations: [
     AppComponent,
     InputComponent,
-    AutocompleteComponent,
     MenubarComponent,
-    TableComponent,
-    FormdesignComponent,
-    PopupComponent,
     TiendaComponent,
     ModalTiendaComponent,
     ArticuloComponent,

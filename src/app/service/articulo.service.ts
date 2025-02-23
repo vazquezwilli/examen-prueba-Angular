@@ -29,6 +29,7 @@ export class ArticuloService {
     }
 
     Delete(id:any){
+        debugger
         return this.http.post(`${this.baseUrl}Delete/?id=${id}`,id);
     
       }

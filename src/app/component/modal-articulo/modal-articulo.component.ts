@@ -43,7 +43,6 @@ export class ModalArticuloComponent {
   });
 
   save() {
-    debugger
     this.service.Save(this.myform.value).subscribe(res => {
       this.closeModal();
     });

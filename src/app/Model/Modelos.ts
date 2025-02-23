@@ -25,3 +25,11 @@ export interface Login {
     correo:string,
     contrasena:string
 }
+
+export interface CarritoCompra {
+    id:number,
+    idCliente:number,
+    idArticulo:number,
+    articuloDescripcion:string,
+    fecha:string
+}

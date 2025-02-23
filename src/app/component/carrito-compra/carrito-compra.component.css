@@ -1,0 +1,16 @@
+.dx-fieldset.flex-column  {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .dx-field.flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .material-icons.color_green { color: #008000; }
+.btnAdd{
+  background-color: green; color:white; font-size: 11px;
+}

@@ -3,11 +3,13 @@
   <mat-form-field>
     <input matInput (keyup)="Filterchange($event)" placeholder="Buscar" />
   </mat-form-field>
+  
   <button style="margin-left: 60%;" (click)="add()" mat-raised-button color="primary">Agregar(+)</button>
 
     </mat-card-header>
     <mat-card-content>
 
+  <h1>Tiendas</h1>
     
 
 <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z8">
